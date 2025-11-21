@@ -45,4 +45,4 @@ Pandas / NumPy (Data processing)
 
 Lottie animations
 
-CSS Cyberpunk Styling
+
