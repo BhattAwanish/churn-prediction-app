@@ -1,4 +1,4 @@
-# app.py — Premium Cyberpunk Churn App (CLEAN & UPDATED)
+# app.py 
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -6,18 +6,14 @@ import joblib
 import json
 import os
 
-# ------------------------
-# Helpers
-# ------------------------
+
 def load_lottie(path):
     if not os.path.exists(path):
         return None
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-# ------------------------
-# Load Model + Scaler
-# ------------------------
+
 model = joblib.load("churn_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
@@ -25,18 +21,14 @@ gender_map = {"Female": 0, "Male": 1}
 internet_map = {"DSL": 0, "Fiber optic": 1, "No": 2}
 contract_map = {"Month-to-month": 0, "One year": 1, "Two year": 2}
 
-# ------------------------
-# Streamlit Config
-# ------------------------
 st.set_page_config(
-    page_title="Premium Churn App",
+    page_title="Customer Churn App",
     page_icon="💎",
     layout="wide",
 )
 
 # ------------------------
-# Cyberpunk CSS
-# ------------------------
+
 st.markdown(
     """
 <style>
@@ -129,7 +121,7 @@ page = st.sidebar.selectbox("Navigation", ["Predict", "About App"])
 # Predict Page
 # ------------------------
 if page == "Predict":
-    st.markdown("<div class='neon-title'>💎 Premium Churn Prediction</div>", unsafe_allow_html=True)
+    st.markdown("<div class='neon-title'>💎 Customer Churn Prediction</div>", unsafe_allow_html=True)
 
     st.markdown("<div class='neon-card'>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
