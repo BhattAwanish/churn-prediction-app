@@ -1,48 +1,43 @@
-🚀 Overview
+# Customer Churn Prediction System
 
- Churn Prediction App is a futuristic, glassmorphic, neon-themed Streamlit application that predicts the probability of customer churn using a trained machine-learning model.
+## 📌 Project Overview
+This project predicts whether a customer is likely to churn using machine learning.
+It helps businesses identify at-risk customers and take proactive retention actions.
 
-The UI blends modern design elements such as:
+---
 
-✨ Glassmorphism
-💠 Cyberpunk Neon Glow Effects
-🎞️ Animated Matrix-style Background
-🎨 Modern Two-Page Layout
-🤖 AI-driven Predictive Insights
+## 🎯 Problem Statement
+Customer churn leads to revenue loss.  
+The goal is to build a predictive ML model that identifies churn-prone customers based on usage and account behavior.
 
-This application is perfect for showcasing ML skills, UI design, and deployment proficiency.
+---
 
-🧠 Features
-🔮 Prediction Engine
+## 🛠️ Tech Stack
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Streamlit
+- Matplotlib / Seaborn
 
-Predicts whether a customer will churn (Yes/No)
+---
 
-Displays probability (%) with confidence level
+## 🔍 Approach
+1. Data cleaning and preprocessing  
+2. Feature engineering  
+3. Model training (Logistic Regression / Random Forest)  
+4. Model evaluation using accuracy and recall  
+5. Deployment using Streamlit  
 
-Encodes categorical features automatically
+---
 
-Scales numerical inputs using the trained scaler
-
-🎨 Premium UI
-
-Cyberpunk gradient background
-
-Neon glow cards
-
-Glass-style components
-
-Animated Matrix rain effect
-
-Two-page navigation: Predict & About App
-
-🛠️ Tech Stack
-
-Streamlit (UI)
-
-Scikit-Learn (ML)
-
-Pandas / NumPy (Data processing)
-
-Lottie animations
+## 📊 Results
+- Achieved **good predictive performance** on churn classification  
+- Model focuses on **recall**, minimizing missed churn customers  
 
 
+---
+
+## ▶️ How to Run
+```bash
+pip install -r requirements.txt
+streamlit run app.py
